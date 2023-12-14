@@ -5,9 +5,10 @@ Este código em Python realiza a extração de informações da previsão do tem
 1 - Importação de Bibliotecas:
 
 * import requests
-* from bs4 import BeautifulSoup
+** from bs4 import BeautifulSoup
 
 Aqui, são importadas as bibliotecas requests para fazer requisições HTTP e BeautifulSoup para fazer a análise do HTML.
+
 
 2 - Definição do Link e Cabeçalhos HTTP:
 
@@ -17,11 +18,13 @@ Aqui, são importadas as bibliotecas requests para fazer requisições HTTP e Be
 
 É definido o link da página da previsão do tempo para Belo Horizonte e um cabeçalho (User-Agent) para simular uma requisição feita por um navegador web.
 
+
 3 - Realização da Requisição HTTP:
 
-*requisicao = requests.get(link, headers=headers)
+* requisicao = requests.get(link, headers=headers)
 
 O código faz uma requisição HTTP à página da web usando o link e os cabeçalhos definidos.
+
 
 4 - Análise do Conteúdo HTML:
 
@@ -29,12 +32,14 @@ O código faz uma requisição HTTP à página da web usando o link e os cabeça
 
 A biblioteca BeautifulSoup é usada para analisar o conteúdo HTML da página, facilitando a extração de informações específicas.
 
+
 5 - Extração da Temperatura Mínima e Máxima:
 
 * temp_min = site.find("span", class_='_margin-r-15')
 * temperatura = site.find("div", class_='-gray _flex _margin-l-5').get_text().strip().split()
 
 Aqui, o código procura no HTML os elementos que contêm as informações de temperatura mínima e máxima. Essas informações são extraídas e formatadas para exibição.
+
 
 6 - Exibição dos Resultados:
 
