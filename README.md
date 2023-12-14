@@ -5,7 +5,7 @@ Este código em Python realiza a extração de informações da previsão do tem
 1 - Importação de Bibliotecas:
 
 * import requests
-** from bs4 import BeautifulSoup
+* from bs4 import BeautifulSoup
 
 Aqui, são importadas as bibliotecas requests para fazer requisições HTTP e BeautifulSoup para fazer a análise do HTML.
 
