@@ -1,4 +1,4 @@
-# Web Scraping - Buscar Temperatura Atual
+# Web Scraping - Buscar Temperatura Atual <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40px"/> 
 
 Este código em Python realiza a extração de informações da previsão do tempo para Belo Horizonte, MG, a partir do site "Climatempo". Vamos analisar o código passo a passo:
 
